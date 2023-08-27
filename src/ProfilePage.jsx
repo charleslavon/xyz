@@ -2,7 +2,7 @@ State.init({
   selectedTab: props.tab || "posts",
 });
 
-const accountId = props.accountId ?? context.accountId;
+const accountId = props.accountId || "charleslavon.near";
 if (!accountId) {
   return "No account ID";
 }
@@ -14,7 +14,7 @@ if (props.tab && props.tab !== state.selectedTab) {
 }
 
 const profile = props.profile ?? Social.getr(`${accountId}/profile`);
-const accountUrl = `/charleslavon.near/widget/ProfilePage?accountId=${accountId}`;
+const accountUrl = `#/charleslavon.near/widget/ProfilePage?accountId=${accountId}`;
 
 const Wrapper = styled.div`
   padding-bottom: 48px;
@@ -197,7 +197,7 @@ return (
 
         {state.selectedTab === "posts" && (
             <Widget
-              src="near/widget/Posts.Feed"
+              src="near/widget/v1.Posts.Feed"
               props={{ accounts: [accountId] }}
             />
         )}
