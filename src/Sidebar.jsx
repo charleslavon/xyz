@@ -276,17 +276,6 @@ return (
               </>
             )}
         </div>
-        {accountId !== context.accountId && (
-          <Widget
-            src="near/widget/FlagButton"
-            props={{
-              item: contentModerationItem,
-              onFlag: () => {
-                State.update({ hasBeenFlagged: true });
-              },
-            }}
-          />
-        )}
       <Actions>
         {viewingOwnAccount ? (
           <a
