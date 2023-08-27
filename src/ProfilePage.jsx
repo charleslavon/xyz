@@ -1,5 +1,5 @@
 State.init({
-  selectedTab: props.tab || "posts",
+  selectedTab: props.tab || "apps",
 });
 
 const accountId = props.accountId || "charleslavon.near";
