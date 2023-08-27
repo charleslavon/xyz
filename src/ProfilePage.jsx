@@ -14,7 +14,7 @@ if (props.tab && props.tab !== state.selectedTab) {
 }
 
 const profile = props.profile ?? Social.getr(`${accountId}/profile`);
-const accountUrl = `#/near/widget/ProfilePage?accountId=${accountId}`;
+const accountUrl = `/charleslavon.near/widget/ProfilePage?accountId=${accountId}`;
 
 const Wrapper = styled.div`
   padding-bottom: 48px;
@@ -163,12 +163,12 @@ return (
     <Main>
       <SidebarWrapper>
         <Widget
-          src="charleslavon.near/widget/ProfilePage.Sidebar"
+          src="charleslavon.near/widget/Sidebar"
           props={{
             accountId,
             profile,
           }}
-        />
+        />    
       </SidebarWrapper>
 
       <Content>
