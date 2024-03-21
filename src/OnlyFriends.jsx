@@ -1,4 +1,4 @@
-const { tokenId } = props;
+const tokenId  = props.tokenId || "v0.8bityonce.near";
 if (!tokenId ) return "missing required props";
 
 State.init({
