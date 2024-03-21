@@ -136,12 +136,12 @@ if (profile === null) {
 }
 
 const topComponents = [
+  {accountId:"charleslavon.near", widgetName:"OnlyFriends"},
   {accountId:"near", widgetName:"ActivityPage"},
   {accountId:"hack.near", widgetName:"widgets.rank"},
-  {accountId:"neardigitalcollective.near", widgetName:"Gigs"},
-  {accountId:"devgovgigs.near", widgetName:"gigs-board.pages.communities"},
   {accountId:"proofofvibes.near", widgetName:"Vibes.DAO.main"},
   {accountId:"minorityprogrammers.near", widgetName:"canny.main"},
+  {accountId:"devgovgigs.near", widgetName:"gigs-board.pages.communities"},
   ];
 
 return (
